@@ -4,7 +4,6 @@ import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 function App() {
-  // TODO: Add routes to books & views
   return (
     <BrowserRouter>
       <main className="container">
@@ -14,9 +13,11 @@ function App() {
             <p>check out our sick-ass <a href='/books'>books</a></p>
           </Route>
           <Route exact path='/books/:id'>
+            <a href='../'>&lt;&lt;&lt; go back to the books</a>
             <BookDetail />
           </Route>
           <Route path='/books'>
+            <a href='../'>&lt;&lt;&lt; go back to the homepage</a>
             <BookList />
           </Route>
         </Switch>

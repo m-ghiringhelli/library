@@ -20,7 +20,7 @@ function BookList() {
 
   return (
     <>
-      <a href='../'>&lt;&lt;&lt; go back to the homepage</a>
+      
       <ul className="book-list" aria-label="book list">
         {books.map((book) => (
           <li key={book.book_id}>
