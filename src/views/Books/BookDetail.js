@@ -1,9 +1,10 @@
 import { useEffect, useState } from 'react';
 import Book from '../../components/book/Book';
 import { getBookById } from '../../services/books';
+import { useParams } from 'react-router-dom';
 
 function BookDetail() {
-  const id = 1; // TODO: Use id from route
+  const id = useParams().id;
   const [book, setBook] = useState(null);
 
   useEffect(() => {

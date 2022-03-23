@@ -1,4 +1,5 @@
 import BookList from './views/Books/BookList';
+import BookDetail from './views/Books/BookDetail';
 import './App.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
@@ -11,6 +12,9 @@ function App() {
         <Switch>
           <Route exact path='/'>
             <p>check out our sick-ass <a href='/books'>books</a></p>
+          </Route>
+          <Route exact path='/books/:id'>
+            <BookDetail />
           </Route>
           <Route path='/books'>
             <BookList />
