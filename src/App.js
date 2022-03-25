@@ -1,7 +1,7 @@
 import BookList from './views/Books/BookList';
 import BookDetail from './views/Books/BookDetail';
 import './App.css';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,11 +13,11 @@ function App() {
             <p>check out our sick-ass <a href='/books'>books</a></p>
           </Route>
           <Route exact path='/books/:id'>
-            <a href='../'>&lt;&lt;&lt; go back to the books</a>
+            <Link to='../books'>&lt;&lt;&lt; go back to the books</Link>
             <BookDetail />
           </Route>
           <Route path='/books'>
-            <a href='../'>&lt;&lt;&lt; go back to the homepage</a>
+            <Link to='../'>&lt;&lt;&lt; go back to the homepage</Link>
             <BookList />
           </Route>
         </Switch>
