@@ -10,7 +10,7 @@ function App() {
         <h1>Library Catalog</h1>
         <Switch>
           <Route exact path='/'>
-            <p>check out our sick-ass <a href='/books'>books</a></p>
+            <p>check out our super sick <Link to='/books'>books</Link></p>
           </Route>
           <Route exact path='/books/:id'>
             <Link to='../books'>&lt;&lt;&lt; go back to the books</Link>
